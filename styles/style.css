@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --main-color: #DAC0A3;
+    --black-color: #141E46; 
+    --border: 0.1rem solid rgba(255,255,255,0.4); 
+
+}
+/*!base html code */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: #fff;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    background-color: var(--black-color);
+}
+
+body{
+    background-color: var(--main-color);
+    
+}
+section{
+    padding: 3.5rem 7%;
+    
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: #141E46;
+    cursor:pointer;
+
+
+}
+.btn:hover{
+    opacity: 0.8;
+
+}
+.heading {
+    color: #141E46;
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #141E46;
+    
+    
+}
+.heading span{
+    color: var(--black-color);
+    text-transform: uppercase;
+}
+
+*{
+    font-family: "Poppins", "sans-serif";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2 ease;
+
+}
+.logo img{
+    height: 7rem;
+}
+
+
+/* header start */
+
+
+
+.header .logo img{
+    height: 30rem;
+    padding: 8%;
+    
+}
+
+.header{
+    background-color:#C70039;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 0rem;
+    
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+    position:static;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a{
+    margin: 0 3rem;
+    font-weight:bold;
+    font-size: 1.51rem;
+    color: var(--black-color);
+    border-bottom: 0.3rem solid transparent;
+
+}
+.header .navbar .active,
+.header .navbar a:hover{
+    border-color: var(--main-color);
+    padding-bottom: 0.10rem;
+}
+
+
+
+
+
+
+
+
+.home .content {
+    max-width: 60%;
+}
+.home .content h3{
+    font-size: 70px;
+    color:#141E46;
+
+}
+.home .content p{
+    font-size: 8px;
+    font-weight: 3000;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #141E46;
+}
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.menu .box-container .box img{
+    padding: 3rem;
+
+    background-color: #fff;
+    
+    border-radius: 3rem;
+    min-height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.menu .box-container .box img{
+    width: 100%;
+    height: auto;
+    max-width: fit-content;
+    object-fit: fill;
+}
+.menu .box-container .box img{
+    width: 100%;
+    height: auto;
+    max-width: fit-content;
+    object-fit: fill;
+}
+.menu .box-container .box img:hover{
+    -webkit-transition: background-color 0s ease-in-out; /* Chrome ve Safari */
+    -moz-transition: background-color 0s ease-in-out; /* Mozilla */
+    -o-transition: background-color 0s ease-in-out; /* Opera */
+    transition: background-color 0s ease-in-out; /* Standart CSS3 Kodu */
+    background-color:#E55604; /* üzerine gelince değişecek olan arkaplan renk */
+}
+    
+
+
+.menu .box-container .menu-category{
+    font-size: 1.8rem;
+}
+.menu .box-container h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.menu2 .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.menu2 .box-container .box img{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+   
+    min-height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.menu2 .box-container .box img{
+    width: 100%;
+    height: auto;
+    max-width: fit-content;
+    object-fit: fill;
+}
+.menu2 .box-container .menu-category{
+    font-size: 1.8rem;
+}
+.menu2 .box-container h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.menu2 .box-container .box img:hover{
+    -webkit-transition: background-color 0s ease-in-out; /* Chrome ve Safari */
+    -moz-transition: background-color 0s ease-in-out; /* Mozilla */
+    -o-transition: background-color 0s ease-in-out; /* Opera */
+    transition: background-color 0s ease-in-out; /* Standart CSS3 Kodu */
+    background-color:#E55604; /* üzerine gelince değişecek olan arkaplan renk */
+    }
+
+
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+.about .row .image {
+   flex: 1 1 45rem;
+}
+
+.about .row .image {
+    object-fit : scale-down;
+    
+}
+.about .row .content {
+    flex: 1 1 45rem;
+}
+.about .row .content h3 {
+    font-size: 3rem;
+    color: #141E46;
+}
+.about .row .content p{
+    font-size: 1.7rem;
+    color: #141E46;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.contact .row{
+    display: flex;
+    background-color: var(--black-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align:center;
+}
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+.contact .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin : 2rem 0 0;
+    border: var(--border);
+}
+.contact .row form .inputBox i{
+    color: #fff;
+    font-size: 3rem;
+    
+    width:27.6%;
+}
+.contact .row form .inputBox input{
+  width: 100%;
+  padding: 2.5rem;
+  font-size: 2rem;
+  color: #DAC0A3;
+  text-transform: none;
+  background:var(--main-color);
+  
+  
+}
+.contact .row form .btn {
+    color: #fff;
+    background-color: #DAC0A3;
+    font-weight: bold;
+}
+.footer{
+    background-color: var(--black-color);
+    text-align: center;
+}
+
+.footer .social-media {
+   
+    padding: 2rem 0;
+}
+.footer .social-media a {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    border: var(--border);
+    border-radius: 50%;
+    margin:0.3rem;
+}
+.footer .social-media a:hover {
+    background-color: var(--main-color);
+    border: var(--border);
+}
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+    .footer .share a:hover {
+        background-color: var(--main-color);
+        opacity: 0.7;
+        border: var(--border);
+    }
+
+
+.footer .links a{
+   background-color: var(--main-color);
+   padding: 0.7rem 2rem;
+   color: #fff;
+   font-size: 2rem;
+   border: var(--border);
+
+}
+
+
+.social-media div{
+    display: inline;
+}
+
+
+.abicik .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    
+}
+.abicik .box-container .box img{
+    padding: 3rem;
+    background-color:var(--black-color);
+    border-radius: 3rem;
+    background-color: #fff;
+    min-height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.abicik .box-container .box img{
+    width: 100%;
+    height: auto;
+    max-width: fit-content;
+    object-fit: fill;
+}
+.abicik .box-container .menu-category{
+    font-size: 1.8rem;
+}
+.abicik .box-container h3{
+   
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.abicik .box-container .box img:hover{
+    -webkit-transition: background-color 0s ease-in-out; /* Chrome ve Safari */
+    -moz-transition: background-color 0s ease-in-out; /* Mozilla */
+    -o-transition: background-color 0s ease-in-out; /* Opera */
+    transition: background-color 0s ease-in-out; /* Standart CSS3 Kodu */
+    background-color:#E55604;	/* varsayilan arkaplan renk */
+    }
+   
+.footer .berkekartal{
+    font-size: 2.5rem;
+    color: #DAC0A3;
+}
+@media (max-width:1200px){
+    html {
+        font-size: 55%;
+    }
+    .header{
+       
+        padding: 1.5rem 0rem;
+        display:inline-table;
+    }
+    .header .navbar a{
+        font-weight: 12 px;
+    }
+    .header .logo img{
+        height: 40rem;
+        padding-left: 3rem;
+    }
+    .about .row .image {
+        display:none;
+     
+     }
+    .menu .box-container .box .box-head .name{
+        font-size: 3.4rem;
+        
+
+    }
+    .menu2 .box-container .box .box-head .name{
+        font-size: 3.4rem;
+    }
+    .abicik .box-container .box .box-head .name{
+        font-size: 3.4rem;
+    }
+    .header .navbar a{
+        height:-70%;
+    }
+
+}
+@media (min-width:500px){
+.header .navbar a{
+    height: 70%;
+}
+
+}
+
+    
+
+   
+
+
+
